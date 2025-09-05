@@ -13,8 +13,14 @@ connectDB();
 
 // Middleware
 app.use(cors());
-app.use(morgan('dev'));
+app.use(morgan('dev'));  
 app.use(express.json());
+
+// Security headers
+app.use((req, res, next) => {
+  res.setHeader('X-Content-Type-Options', 'nosniff');
+  next();
+});
 
 // Routes
 app.use('/api/users', userRoutes);
