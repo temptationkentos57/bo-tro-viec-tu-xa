@@ -1,0 +1,13 @@
+{
+  "name": "bo-tro-viec-tu-xa",
+  "version": "1.0.0",
+  "description": "Ứng dụng Bo Tro Viec Tu Xa giúp người lao động làm việc từ xa tìm kiếm công việc phù hợp.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tên của bạn",
+  "license": "ISC",
+  "dependencies": {}
+}
